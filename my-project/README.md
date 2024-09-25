@@ -1,0 +1,1 @@
+This is the frontend for the SIH Project which is to create an AICTE Institute approval process
