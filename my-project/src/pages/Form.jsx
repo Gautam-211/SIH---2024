@@ -1,6 +1,7 @@
 import { useState } from "react"
 import InstitutionDetails from "../components/Forms/InstitutionDetails";
 import Questionnaire from "../components/Forms/Questionnaire";
+import RegistrarDetails from "../components/Forms/RegistrarDetails";
 
 const Form = () => {
 
@@ -17,13 +18,17 @@ const Form = () => {
       </div>
 
       <div className="border-[1px] border-blue-700 rounded-md h-[85%] overflow-auto px-3 py-5 w-full">
-		{
-			formNo==1 && 
-			<Questionnaire/>
-		}
+        {
+          formNo==1 && 
+          <Questionnaire/>
+        }
       	{
           formNo === 2 &&
           <InstitutionDetails/>
+        }
+        {
+          formNo === 3 &&
+          <RegistrarDetails/>
         }
       </div>
 
